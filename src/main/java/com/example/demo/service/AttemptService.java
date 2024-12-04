@@ -4,7 +4,7 @@ import com.example.demo.model.Attempt;
 import com.example.demo.model.GameSession;
 import com.example.demo.repository.AttemptRepository;
 import com.example.demo.repository.GameSessionRepository;
-import com.game.bullsandcows.GuessAndResultCheck;
+import com.game.bullsandcows.result.GuessAndResultCheck;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -31,6 +31,9 @@ public class AttemptService {
             throw new IllegalArgumentException("Игра уже завершена");
         }
 
+        if (number.length() < gameSession.getNumber().length() || number.length() > gameSession.getNumber().length()) {
+            throw new IllegalArgumentException("Количество цифр должно совпадать с секретным числом");
+        }
         GuessAndResultCheck guessAndResultCheck = new GuessAndResultCheck();
         int[] result = guessAndResultCheck.checkResult(gameSession.getNumber(), number);
         int bulls = result[0];
