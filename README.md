@@ -16,7 +16,7 @@
 - Java Development Kit (JDK) 17 или выше
 - Maven
 - IDE (например, IntelliJ IDEA, Eclipse)
-- База данных (например, MySQL, PostgreSQL)
+- База данных (например, MySQL, PostgreSQL), если встроенная H2 Database не работает
 
 ## Установка
 
