@@ -31,14 +31,6 @@
 
     - Создайте новую базу данных для проекта.
     - Обновите файл application.properties с конфигурацией вашей базы данных:
-
-   {
-      
-        spring.datasource.url=jdbc\:mysql://localhost:3306/your_database_name
-        spring.datasource.username=your_database_username
-        spring.datasource.password=your_database_password
-        spring.jpa.hibernate.ddl-auto=update
-   }
       
 4. Соберите проект:
 
