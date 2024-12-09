@@ -13,7 +13,7 @@
 
 Перед началом убедитесь, что у вас установлены следующие компоненты:
 
-- Java Development Kit (JDK) 18 или выше
+- Java Development Kit (JDK) 17 или выше
 - Maven
 - IDE (например, IntelliJ IDEA, Eclipse)
 - База данных (например, MySQL, PostgreSQL)
@@ -23,10 +23,11 @@
 1. Клонируйте репозиторий:
 
    
-    git clone https://github.com/your-username/bulls-and-cows-game-api.git
-    cd bulls-and-cows-game-api
+    git clone https://github.com/klOmzy/demo.git
+   
+    cd demo
     
-2. Настройте базу данных:
+3. Настройте базу данных:
 
     - Создайте новую базу данных для проекта.
     - Обновите файл application.properties с конфигурацией вашей базы данных:
@@ -37,7 +38,7 @@
         spring.datasource.password=your_database_password
         spring.jpa.hibernate.ddl-auto=update
         
-3. Соберите проект:
+4. Соберите проект:
 
    
     mvn clean install
@@ -47,7 +48,7 @@
 1. Запустите приложение:
 
    
-    mvn spring-boot\:run
+    mvn spring-boot:run
     
 2. Доступ к API:
 
