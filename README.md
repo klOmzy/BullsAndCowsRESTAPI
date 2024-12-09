@@ -32,12 +32,14 @@
     - Создайте новую базу данных для проекта.
     - Обновите файл application.properties с конфигурацией вашей базы данных:
 
-       
+   {
+      
         spring.datasource.url=jdbc\:mysql://localhost:3306/your_database_name
         spring.datasource.username=your_database_username
         spring.datasource.password=your_database_password
         spring.jpa.hibernate.ddl-auto=update
-        
+   }
+      
 4. Соберите проект:
 
    
@@ -67,6 +69,7 @@
 
    
     {
+  
         "login": "your_login",
         "password": "your_password"
     }
@@ -80,6 +83,7 @@
 
    
     {
+  
         "login": "your_login",
         "password": "your_password"
     }
@@ -95,6 +99,7 @@
 
    
     {
+  
         "number": "1234",
         "gameRules": "repeat",
         "session": "your_session_id"
@@ -116,5 +121,6 @@
 
    
     {
+  
         "number": "1234"
     }
