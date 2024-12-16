@@ -23,9 +23,9 @@
 1. Клонируйте репозиторий:
 
    
-    git clone https://github.com/klOmzy/demo.git
+    git clone https://github.com/klOmzy/BullsAndCowsRESTAPI.git
    
-    cd demo
+    cd BullsAndCowsRESTAPI
     
 3. Настройте базу данных:
 
